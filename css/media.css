@@ -1,0 +1,69 @@
+@media (min-width: 1230px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media (max-width: 1230px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(172, 176, 173, 0.5);
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        width: 200px;
+        height: 500px;
+        opacity: 0;
+    }
+
+
+    .checkbox:checked+ul {
+        opacity: 1;
+    }
+
+    .header {
+        background: url(../img/header/small.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .header-content {
+        margin-top: 450px;
+    }
+
+    .header-heading {
+        padding-top: 30px;
+    }
+
+
+    .about-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .header-heading {
+        padding-top: 40px;
+        font-size: 24px;
+    }
+
+    .services-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (hover: hover) {
+    .checkbox:hover {
+        cursor: pointer;
+    }
+}

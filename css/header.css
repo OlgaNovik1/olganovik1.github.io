@@ -1,0 +1,105 @@
+.header {
+    padding-top: 46px;
+    background: url(../img/header/photo_2023-01-11_17-03-12.jpg);
+    background-size: cover;
+    height: 770px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.burger {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
+
+.burger_line {
+    display: block;
+    height: 3px;
+    width: 21px;
+    background-color: black;
+    margin-bottom: 4px;
+}
+
+.burger_line:last-child {
+    margin-bottom: 0;
+}
+
+.checkbox {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+}
+
+
+.checkbox:checked~nav ul {
+    opacity: 1;
+}
+
+
+
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    z-index: 2;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #b8abab;
+}
+
+.header-content {
+    max-width: 500px;
+    margin-top: 210px;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    line-height: 2;
+}
+
+.header-heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.overlay {
+    width: 100%;
+    height: 770px;
+    background: rgba(0, 0, 0, 0.03);
+    position: absolute;
+    top: 0;
+    left: 0;
+}

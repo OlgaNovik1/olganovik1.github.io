@@ -1,0 +1,31 @@
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+}
+
+.contacts-content {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-bottom: 40px;
+}
+
+.contacts-social a:hover {
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+.contacts-footer {
+    color: #828282;
+}

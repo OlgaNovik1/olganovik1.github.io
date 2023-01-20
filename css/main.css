@@ -1,0 +1,182 @@
+.services-section {
+    padding: 90px 0;
+}
+
+.services-title {
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.services-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card p {
+    line-height: 2;
+}
+
+
+.service-card-img {
+    margin-bottom: 30px;
+}
+
+.service-card-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.portfolio {
+    padding: 90px 0;
+    background-color: rgb(248, 248, 248);
+
+}
+
+.portfolio-title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.title-1 {
+    font-weight: 500;
+    font-size: 34px;
+    text-align: center;
+}
+
+.project {
+    text-align: center;
+    width: 800;
+    height: 550;
+    overflow: hidden;
+}
+
+.project img:hover {
+    transform: scale(1.09);
+    transition: all 0.5s ease;
+
+}
+
+.project+.project {
+    margin-top: 90px;
+}
+
+.project-img {
+    margin-bottom: 40px;
+}
+
+.project-title {
+    font-size: 18px;
+}
+
+.project-title a {
+    text-decoration: underline;
+}
+
+.project-title a:hover {
+    color: #b8abab;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px 0;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+.about-content {
+    margin-top: 70px;
+}
+
+.about-content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.skills-section {
+    background-color: rgb(248, 248, 248);
+    padding: 90px 0px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    max-width: 100%;
+}
+
+.skill {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #600d0d;
+    text-transform: uppercase;
+}
+
+.skill-bar {
+    height: 14px;
+    background: #cfcdcd;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 14px;
+    background: orange;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 5.5s infinite;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: rgb(223, 68, 68);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    top: -45px;
+    right: 0;
+    transform: translateX(50%);
+    z-index: 2;
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(223, 68, 68);
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 1px;
+    z-index: 0;
+}
+
+@keyframes fillBars {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
